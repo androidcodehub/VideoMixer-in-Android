@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">CameraDemo</string>
+    <string name="hint">Hint</string>
+    <string name="dialog_yes">yes</string>
+    <string name="dialog_no">no</string>
+    <string name="action_back">back</string>
+    <string name="action_cancel">cancel</string>
+    <string name="action_ok">determine</string>
+    <string name="imageview_content_description"></string>
+    <string name="record_camera_author">%1$s works</string>
+    <string name="record_camera_title">Shoot</string>
+    <string name="record_camera_back">return</string>
+
+    <string name="record_camera_open_audio_faild">Can not open the recording device!</string>
+    <string name="record_camera_save_faild">Video information failed to save!</string>
+    <string name="record_camera_exit_dialog_message">Did you give up this video?</string>
+    <string name="record_camera_import">Import</string>
+    <string name="record_camera_import_image">photo</string>
+    <string name="record_camera_import_image_choose">Choose from local photos</string>
+    <string name="record_camera_import_image_faild">Failed to import photos</string>
+    <string name="record_camera_import_video">video</string>
+    <string name="record_camera_import_video_title">Intercept \ take</string>
+    <string name="record_camera_import_video_choose">Choose from local video</string>
+    <string name="record_camera_import_video_faild">Import video failed</string>
+    <string name="record_camera_tools_focus">focus</string>
+    <string name="record_camera_tools_led">flash</string>
+    <string name="record_camera_ghost">ghost</string>
+    <string name="record_camera_preview_title">edit</string>
+    <string name="record_camera_preview_pre">Shoot</string>
+    <string name="record_camera_preview_next">Next step</string>
+    <string name="record_camera_cancel_dialog_yes">determine</string>
+    <string name="record_camera_cancel_dialog_no">cancel</string>
+    <string name="record_video_transcoding_faild">Video transcoding failed</string>
+    <string name="record_video_transcoding_success">Video saved in:%s</string>
+    <string name="record_read_object_faild">Shooting information read failed! Please check the SD card and try again later!</string>
+    <string name="record_preview_theme">theme</string>
+    <string name="record_preview_title">Preview</string>
+    <string name="record_preview_theme_original">original</string>
+    <string name="record_preview_theme_load_faild">Topic loading failed</string>
+    <string name="record_preview_encoding">Transcoding ...</string>
+    <string name="record_preview_encoding_format">Transcoding\t%d%%</string>
+    <string name="record_preview_music_nothing">no</string>
+    <string name="record_preview_tab_theme">theme</string>
+    <string name="record_preview_tab_filter">Filter</string>
+    <string name="record_preview_building">Video generation ...</string>
+    <string name="record_camera_progress_message" >Please wait</string>
+</resources>

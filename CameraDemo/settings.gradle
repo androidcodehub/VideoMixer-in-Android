@@ -1,0 +1,2 @@
+include ':vitamioRecorderLibrary3', ':CameraDemo1'
+project(':CameraDemo1').projectDir = new File('CameraDemo')
