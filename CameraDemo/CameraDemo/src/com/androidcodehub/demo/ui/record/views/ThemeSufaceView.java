@@ -20,12 +20,7 @@ import com.yixia.camera.util.FileUtils;
 import com.yixia.camera.util.StringUtils;
 import com.yixia.videoeditor.adapter.UtilityAdapter;
 
-/**
- * MV主题预览
- * 
- * @author tangjun
- *
- */
+
 public class ThemeSufaceView extends SurfaceView implements Callback {
 
 	/** 循环 */
@@ -195,7 +190,7 @@ public class ThemeSufaceView extends SurfaceView implements Callback {
 		this.mFilterCommonPath = path;
 	}
 
-	/** 设置片尾动画路径 */
+
 	public void setVideoEndPath(String path) {
 		this.mEndPath = path;
 		this.mEndWidth = PreferenceUtils.getInt(PreferenceKeys.THEME_LOGO_AUTHOR_WIDTH, 0);
@@ -312,7 +307,7 @@ public class ThemeSufaceView extends SurfaceView implements Callback {
 		}
 	};
 
-	/** 暂停并且清除定时任务 */
+
 	public void pauseClearDelayed() {
 		pause();
 		clearMessages();

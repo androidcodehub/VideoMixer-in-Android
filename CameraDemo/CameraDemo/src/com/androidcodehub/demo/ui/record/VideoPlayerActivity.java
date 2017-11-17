@@ -1,12 +1,12 @@
 package com.androidcodehub.demo.ui.record;
 
-import android.annotation.TargetApi;
+
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnInfoListener;
 import android.media.MediaPlayer.OnPreparedListener;
-import android.os.Build;
+
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -160,7 +160,7 @@ public class VideoPlayerActivity extends BaseActivity implements SurfaceVideoVie
 			mVideoView.reOpen();
 	}
 
-	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+
   @Override
 	public boolean onInfo(MediaPlayer mp, int what, int extra) {
 		switch (what) {

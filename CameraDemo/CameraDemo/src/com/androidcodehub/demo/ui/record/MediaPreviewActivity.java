@@ -140,7 +140,8 @@ public class MediaPreviewActivity extends BaseActivity implements OnClickListene
 		mPlayStatus = (ImageView) findViewById(R.id.play_status);
 		mThemeSufaceView = (ThemeSufaceView) findViewById(R.id.preview_theme);
 		mTitleLeft = (TextView) findViewById(R.id.titleLeft);
-		mTitleNext = (TextView) findViewById(R.id.titleRight);
+	//
+		// 	mTitleNext = (TextView) findViewById(R.id.titleRight);
 		mTitleText = (TextView) findViewById(R.id.titleText);
 		mVideoPreviewMusic = (TextView) findViewById(R.id.video_preview_music);
 		mThemes = (ThemeGroupLayout) findViewById(R.id.themes);
@@ -152,7 +153,9 @@ public class MediaPreviewActivity extends BaseActivity implements OnClickListene
 		mFilterLayout = findViewById(R.id.filter_layout);
 
 		mTitleLeft.setOnClickListener(this);
-		mTitleNext.setOnClickListener(this);
+	//
+		//
+	//	mTitleNext.setOnClickListener(this);
 		mThemeSufaceView.setOnComplateListener(mOnComplateListener);
 		mThemeSufaceView.setOnClickListener(this);
 		findViewById(R.id.tab_theme).setOnClickListener(this);
@@ -161,11 +164,11 @@ public class MediaPreviewActivity extends BaseActivity implements OnClickListene
 		mVideoVolumn.setOnClickListener(this);
 
 		mTitleText.setText(R.string.record_camera_preview_title);
-		mTitleNext.setText(R.string.record_camera_preview_next);
+	//mTitleNext.setText(R.string.record_camera_preview_next);
 
 
 		mThemeSufaceView.setIntent(getIntent());
-		mThemeSufaceView.setOutputPath(mVideoPath);//输出文件
+		mThemeSufaceView.setOutputPath(mVideoPath);
 		mThemeSufaceView.setMediaObject(mMediaObject);
 		if (FileUtils.checkFile(mThemeCacheDir)) {
 			mThemeSufaceView.setFilterCommomPath(new File(mThemeCacheDir, ThemeHelper.THEME_VIDEO_COMMON).getAbsolutePath());
@@ -203,9 +206,7 @@ public class MediaPreviewActivity extends BaseActivity implements OnClickListene
 		case R.id.titleLeft:
 			finish();
 			break;
-		case R.id.titleRight:
-			startEncoding();
-			break;
+
 		case R.id.preview_theme:
 			if (isPlaying())
 				stopVideo();
@@ -435,7 +436,7 @@ public class MediaPreviewActivity extends BaseActivity implements OnClickListene
 	private void onEncodingEnd() {
 		hideProgress();
 		mStartEncoding = false;
-		startActivity(new Intent(this, VideoPlayerActivity.class).putExtra("path", mVideoPath));
+///		startActivity(new Intent(this, VideoPlayerActivity.class).putExtra("path", mVideoPath));
 	}
 
 

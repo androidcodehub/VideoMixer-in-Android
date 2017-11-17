@@ -17,10 +17,6 @@
         style="@style/TitleStyleCenter" >
     </TextView>
 
-    <TextView
-        android:id="@+id/titleRight"
-        style="@style/TitleStyleRight"
-        android:drawableRight="@drawable/title_text_right" >
-    </TextView>
+
 
 </LinearLayout>

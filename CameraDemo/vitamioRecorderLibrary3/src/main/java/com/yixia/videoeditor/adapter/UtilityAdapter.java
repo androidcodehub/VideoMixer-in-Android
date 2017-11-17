@@ -199,15 +199,7 @@ public class UtilityAdapter {
 		FilterParserAction("", PARSERACTION_FREE);
 	}
 
-	/**
-	 * 变声
-	 * 
-	 * @param inPath wav音频输入
-	 * @param outPath wav音频输出
-	 * @param tempoChange 变速(语速增加%xx)
-	 * @param pitch  // 音幅变调
-	 * @param pitchSemitone //音程变调
-	 */
+
 	public static native int SoundEffect(String inPath, String outPath, float tempoChange, float pitch, int pitchSemitone);
 
 	protected static AudioTrack mAudioTrack;
@@ -289,14 +281,14 @@ public class UtilityAdapter {
 		return 0;
 	}
 
-	/** 注册监听回调 */
+
 	public static void registerNativeListener(OnNativeListener l) {
 		mOnNativeListener = l;
 	}
 
 	private static OnNativeListener mOnNativeListener;
 
-	/** 底层通知 */
+
 	public static interface OnNativeListener {
 		public void ndkNotify(int key, int value);
 	}
